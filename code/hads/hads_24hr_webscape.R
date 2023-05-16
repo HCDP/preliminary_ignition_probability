@@ -7,7 +7,7 @@ Sys.Date()
 
 #make dirs
 mainDir <- "/home/hawaii_climate_products_container/preliminary"
-codeDir<-paste0(mainDir,"/rainfall/code/source")
+codeDir<-paste0(mainDir,"/data_aqs/code/source")
 
 #define dates
 source(paste0(codeDir,"/dataDateFunc.R"))
