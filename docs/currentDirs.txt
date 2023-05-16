@@ -5,6 +5,7 @@ hawaii_climate_products_container/preliminary/data_aqs/code/hi_mesonet
 hawaii_climate_products_container/preliminary/data_aqs/code/nws_rr5
 hawaii_climate_products_container/preliminary/data_aqs/code/madis
 hawaii_climate_products_container/preliminary/data_aqs/code/hads
+hawaii_climate_products_container/preliminary/data_aqs/code/source
 hawaii_climate_products_container/preliminary/data_aqs/docs
 hawaii_climate_products_container/preliminary/data_aqs/data_outputs
 hawaii_climate_products_container/preliminary/data_aqs/data_outputs/scan
