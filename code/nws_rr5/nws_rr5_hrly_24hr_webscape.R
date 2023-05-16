@@ -64,7 +64,7 @@ for(i in V_urls){
 	write(page,paste0(day_dir,"/NWS_auto_1hr_",obs_dt,".html"))
 }
 
-files2zip <- Sys.glob(paths = day_dir, "*.html") #list all files to zip and later parse
+files2zip <- Sys.glob(paths = file.path(day_dir, "*.html")) #list all files to zip and later parse
 zip(zipfile = paste0(getwd(),"/nws_hrly_rf_html_",format(Sys.Date()-1,"%Y_%m_%d")), files = files2zip)#zip and/or append raw html files
 print("hrly html sites scraped and saved!!")
 
