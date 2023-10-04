@@ -53,10 +53,8 @@ geog_meta<-read.csv(meta_url, colClasses=c("NESDIS.id"="character"))
 himesoIDs<-geog_meta[tolower(geog_meta$Observer)=="himesonet" & !is.na(geog_meta$NWS.id),"NWS.id"]
 
 
-#get syno api token from bashrc
-bashrc<-system("cat .bashrc", intern = T)
-exportCall<-bashrc[length(bashrc)]
-synoToken<-substr(exportCall,which(strsplit(exportCall, "")[[1]]=="=")+1,nchar(exportCall))
+#get syno api token from environment
+synoToken<-Sys.getenv("SYNOPTIC_TOKEN")
 
 #set up station loop outputs
 daynames<-as.character()
