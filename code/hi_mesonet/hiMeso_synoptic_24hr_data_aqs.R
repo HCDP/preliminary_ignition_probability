@@ -8,7 +8,7 @@ s<-Sys.time()
 
 #set dirs
 mainDir <- "/home/hawaii_climate_products_container/preliminary"
-codeDir<-paste0(mainDir,"/rainfall/code/source")
+codeDir<-paste0(mainDir,"/data_aqs/code/source")
 rawOutDir<-paste0(mainDir,"/data_aqs/data_outputs/mesonetSynoptic/raw")
 parseOutDir<-paste0(mainDir,"/data_aqs/data_outputs/mesonetSynoptic/parse")
 
