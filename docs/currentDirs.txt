@@ -22,3 +22,5 @@ hawaii_climate_products_container/preliminary/data_aqs/data_outputs/madis/raw
 hawaii_climate_products_container/preliminary/data_aqs/data_outputs/hads
 hawaii_climate_products_container/preliminary/data_aqs/data_outputs/hads/parse
 hawaii_climate_products_container/preliminary/data_aqs/data_outputs/hads/raw
+hawaii_climate_products_container/preliminary/data_aqs/data_outputs/mesonetSynoptic/parse
+hawaii_climate_products_container/preliminary/data_aqs/data_outputs/mesonetSynoptic/raw
