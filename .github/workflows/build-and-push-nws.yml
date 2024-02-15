@@ -1,4 +1,4 @@
-name: Build and Push HADS
+name: build_and_push_nws
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
     - "containers/nws/**"
   workflow_run:
     workflows:
-      - "base-acquisition"
+      - build_and_push_base
     types:
       - completed
   workflow_dispatch:

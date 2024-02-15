@@ -1,4 +1,4 @@
-name: Build and Push madis
+name: build_and_push_madis
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
     - "containers/madis/**"
   workflow_run:
     workflows:
-      - "base-acquisition"
+      - build_and_push_base
     types:
       - completed
   workflow_dispatch:
