@@ -13,7 +13,7 @@ jobs:
   base-acquisition:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Set container name
       run: echo "CONTAINER_NAME=task-preliminary-acquisition-base" >> $GITHUB_ENV
     - name: Get date and hash
@@ -21,7 +21,7 @@ jobs:
     - name: Build container
       run: docker build . --file containers/Dockerfile --tag ghcr.io/hcdp/${{ env.CONTAINER_NAME }}:${{ env.TAG }}
     - name: Log in to the container registry
-      uses: docker/login-action@v2.1.0
+      uses: docker/login-action@v3
       with:
         registry: ghcr.io
         username: ${{ secrets.PUSH_PACKAGE_USERNAME }}
