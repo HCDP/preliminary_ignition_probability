@@ -1,5 +1,5 @@
-FROM ghcr.io/ikewai/task-base:latest
-LABEL org.opencontainers.image.source="https://github.com/ikewai/c14n"
+FROM ghcr.io/hcdp/task-base:latest
+LABEL org.opencontainers.image.source="https://github.com/HCDP/preliminary_data_acquisition"
 LABEL org.opencontainers.image.description="Base Image for data acquisition containers."
 
 # Add pytz dependency (madis)

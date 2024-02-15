@@ -1,4 +1,4 @@
-FROM ghcr.io/ikewai/task-preliminary-acquisition-base:latest
+FROM ghcr.io/hcdp/task-preliminary-acquisition-base:latest
 
 # Add the hads code
 ADD /code/nws_rr5 /home/hawaii_climate_products_container/preliminary/data_aqs/code/nws_rr5
