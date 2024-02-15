@@ -1,0 +1,39 @@
+name: Build and Push HI Mesonet
+
+on:
+  push:
+    branches:
+    - "main"
+    paths:
+    - "code/hi_mesonet/**"
+    - "containers/hi-mesonet/**"
+  workflow_run:
+    workflows:
+      - "base-acquisition"
+    types:
+      - completed
+  workflow_dispatch:
+
+
+jobs:
+  hi-mesonet-acquisition:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set container name
+      run: echo "CONTAINER_NAME=task-preliminary-acquistion-hi-mesonet" >> $GITHUB_ENV
+    - name: Get date and hash
+      run: echo "TAG=$(date --iso-8601)-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+    - name: Build container
+      run: docker build . --file containers/mesonet/Dockerfile --tag ghcr.io/ikewai/${{ env.CONTAINER_NAME }}:${{ env.TAG }}
+    - name: Log in to the container registry
+      uses: docker/login-action@v2.1.0
+      with:
+        registry: ghcr.io
+        username: ${{ secrets.PUSH_PACKAGE_USERNAME }}
+        password: ${{ secrets.PUSH_PACKAGE_TOKEN }}
+    - name: Tag the container as latest
+      run: docker tag ghcr.io/ikewai/${{ env.CONTAINER_NAME }}:${{ env.TAG }} ghcr.io/ikewai/${{ env.CONTAINER_NAME }}:latest
+    - name: Push the container
+      run: docker push ghcr.io/ikewai/${{ env.CONTAINER_NAME }}:${{ env.TAG }} && docker push ghcr.io/ikewai/${{ env.CONTAINER_NAME }}:latest
+
+  
