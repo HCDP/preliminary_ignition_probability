@@ -8,8 +8,7 @@ on:
     - "code/hads/**"
     - "containers/hads/**"
   workflow_run:
-    workflows:
-      - "build_and_push_base"
+    workflows: [build_and_push_base]
     types:
       - completed
   workflow_dispatch:
