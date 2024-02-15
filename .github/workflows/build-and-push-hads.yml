@@ -9,7 +9,7 @@ on:
     - "containers/hads/**"
   workflow_run:
     workflows:
-      - build_and_push_base
+      - "build_and_push_base"
     types:
       - completed
   workflow_dispatch:
