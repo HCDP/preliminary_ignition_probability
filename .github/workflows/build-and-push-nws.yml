@@ -19,6 +19,7 @@ jobs:
   nws-acquisition:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
     - name: Set container name
       run: echo "CONTAINER_NAME=task-preliminary-acquistion-nws" >> $GITHUB_ENV
     - name: Get date and hash

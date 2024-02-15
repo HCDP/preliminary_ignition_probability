@@ -13,6 +13,7 @@ jobs:
   base-acquisition:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
     - name: Set container name
       run: echo "CONTAINER_NAME=task-preliminary-acquistion-base" >> $GITHUB_ENV
     - name: Get date and hash
