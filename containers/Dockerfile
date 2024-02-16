@@ -16,7 +16,8 @@ RUN apt install -y r-base
 RUN R -e 'install.packages("tidyr", repos="http://cran.us.r-project.org")'
 RUN R -e 'install.packages("lubridate", repos="http://cran.us.r-project.org")'
 
-RUN mkdir -p /home/hawaii_climate_products_container/preliminary/data_aqs
+RUN mkdir -p /home/hawaii_climate_products_container/preliminary/data_aqs/code/source
+ADD /code/source /home/hawaii_climate_products_container/preliminary/data_aqs/code/source
 
 # Pull the latest version of the data uploader.
 RUN mkdir /sync
