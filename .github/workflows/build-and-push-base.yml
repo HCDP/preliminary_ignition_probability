@@ -7,6 +7,8 @@ on:
     paths:
     - "containers/Dockerfile"
     - "tools/*"
+  repository_dispatch:
+    types: [trigger-workflow]
   workflow_dispatch:
 
 
