@@ -2,9 +2,6 @@
 
 rm(list = ls())#remove all objects in R
 
-Sys.Date()
-
-
 #make dirs
 mainDir <- "/home/hawaii_climate_products_container/preliminary"
 codeDir<-paste0(mainDir,"/data_aqs/code/source")
@@ -12,7 +9,6 @@ codeDir<-paste0(mainDir,"/data_aqs/code/source")
 #define dates
 source(paste0(codeDir,"/dataDateFunc.R"))
 dataDate<-dataDateMkr() #function for importing/defining date as input or as yesterday
-currentDate<-dataDate #dataDate as currentDate
 
 #set options
 options(warn=-1)#supress warnings for session
@@ -31,7 +27,7 @@ page<-readLines(url)
 #save raw data
 setwd(raw_page_wd)#sever path for un-parsed hads files
 
-page_name<-paste0("hads_hi_page_ending_",format(currentDate,"%Y_%m_%d"),"_HST.txt")
+page_name<-paste0("hads_hi_page_ending_",format(dataDate,"%Y_%m_%d"),"_HST.txt")
 writeLines(page,page_name)
 print(paste("web-scrape saved...",page_name))
 
@@ -43,7 +39,7 @@ all_hads$null<-NULL
 
 #write data to parsed table
 setwd(parse_wd)#sever path for parsed hads files
-hads_filename<-paste0(format((currentDate),"%Y%m%d"),"_hads_parsed.csv") #dynamic file name that includes date
+hads_filename<-paste0(format(dataDate,"%Y%m%d"),"_hads_parsed.csv") #dynamic file name that includes date
 write.csv(all_hads,hads_filename, row.names=F)
 print("pased all data table saved...")
 
