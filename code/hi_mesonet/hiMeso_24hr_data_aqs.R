@@ -85,7 +85,8 @@ himeso<-read.csv("https://raw.githubusercontent.com/ikewai/hawaii_wx_station_mgm
 str(himeso)
 
 #define date
-dataDate<-Sys.Date()-1
+source(paste0(codeDir,"/dataDateFunc.R"))
+dataDate<-dataDateMkr() #function for importing/defining date as input or as yesterday
 
 #get data and make long 
 all_hiMeso<-getMetDataDatesLong(station = himeso$staName,startDate=dataDate ,endDate=dataDate)
@@ -95,7 +96,7 @@ tail(all_hiMeso)
 #write data to file
 if(nrow(all_hiMeso)>0){
   setwd(parse_wd)#sever path for parsed hiMeso files
-  hiMeso_filename<-paste0(format((Sys.Date()-1),"%Y%m%d"),"_hiMeso_parsed.csv") #dynamic file name that includes date
+  hiMeso_filename<-paste0(format(dataDate,"%Y%m%d"),"_hiMeso_parsed.csv") #dynamic file name that includes date
   write.csv(all_hiMeso,hiMeso_filename, row.names=F)
   print("pased all data table saved...")
   }else{

@@ -139,8 +139,13 @@ ftp_pass = 'anonymous'
 
 #Get filenames in correct time zone
 hst = pytz.timezone('HST')
-today = datetime.today().astimezone(hst)
-prev_day = today - timedelta(days=1)
+prev_day = None
+if len(sys.argv) > 1:
+    date_str = sys.argv[1]
+    prev_day = datetime.strptime(date_str, '%Y-%m-%d').astimezone(hst)
+else:
+    today = datetime.today().astimezone(hst)
+    prev_day = today - timedelta(days=1)
 
 time_st = pd.to_datetime(datetime(prev_day.year,prev_day.month,prev_day.day,0))
 time_en = pd.to_datetime(datetime(prev_day.year,prev_day.month,prev_day.day,23))
