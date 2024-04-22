@@ -35,7 +35,9 @@ readSynUrl <- function(url) {
 #define date
 source(paste0(codeDir,"/dataDateFunc.R"))
 dataDate<-dataDateMkr() #function for importing/defining date as input or as yesterday
+print(dataDate)
 dataDateName<-format(dataDate,"%Y%m%d")
+print(dataDateName)
 dtstart<-as.POSIXct(paste(dataDate,"00:00:00"), tz="HST") #make start date time HST
 dtend<-as.POSIXct(paste(dataDate+1,"00:00:00"), tz="HST") #make end date time HST
 
