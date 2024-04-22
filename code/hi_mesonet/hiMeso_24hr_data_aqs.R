@@ -11,6 +11,7 @@ Sys.setenv(TZ='Pacific/Honolulu') #set TZ to honolulu
 
 #set MAIN DIR
 mainDir <- "/home/hawaii_climate_products_container/preliminary"
+codeDir<-paste0(mainDir,"/data_aqs/code/source")
 
 #output dirs
 parse_wd<-paste0(mainDir,"/data_aqs/data_outputs/hi_mesonet/parse")
