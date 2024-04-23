@@ -6,12 +6,10 @@ dataDateMkr <- function(dateVar=NA){
   #make globalDate if 
   dataDate<-if(length(args) > 0) {
     as.Date(args[1]) #if globalDate is NA & dateVar is not NA, set date in code with dateVar
-    print(args[1])
   } else if(!is.na(dateVar)) {
     as.Date(dateVar)
   } else {
     Sys.Date()-1 #or sysDate -1
   }
-  print(dataDate)
   return(dataDate)
 }
