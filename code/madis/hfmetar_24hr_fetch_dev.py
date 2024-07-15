@@ -125,7 +125,7 @@ else:
     prev_day = today - timedelta(days=1)
 
 time_st = pd.to_datetime(datetime(prev_day.year,prev_day.month,prev_day.day,0))
-time_en = pd.to_datetime(datetime(prev_day.year,prev_day.month,prev_day.day,23))
+time_en = pd.to_datetime(datetime(prev_day.year,prev_day.month,prev_day.day,24))
 hst_times = pd.date_range(time_st,time_en,freq='1H',tz='HST')
 utc_times = hst_times.tz_convert(tz=None)
 
