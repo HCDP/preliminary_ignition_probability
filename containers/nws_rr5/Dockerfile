@@ -8,7 +8,7 @@ RUN mkdir -p /home/hawaii_climate_products_container/preliminary/data_aqs/data_o
 RUN mkdir -p /home/hawaii_climate_products_container/preliminary/data_aqs/data_outputs/nws_rr5/raw
 
 # Copy the upload configuration.
-ADD /containers/nws_rr5/upload_config.json /sync/upload_config.json
+ADD /containers/nws_rr5/configs/upload.json /sync/upload.json
 
 # Copy the task definition script.
 ADD /containers/nws_rr5/task.sh /actor/task.sh

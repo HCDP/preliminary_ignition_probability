@@ -10,7 +10,7 @@ RUN mkdir -p /home/hawaii_climate_products_container/preliminary/data_aqs/data_o
 RUN mkdir -p /home/hawaii_climate_products_container/preliminary/data_aqs/data_outputs/mesonetSynoptic/raw
 
 # Copy the upload configuration.
-ADD /containers/hi_mesonet/upload_config.json /sync/upload_config.json
+ADD /containers/hi_mesonet/configs/upload.json /sync/upload.json
 
 # Copy the task definition script.
 ADD /containers/hi_mesonet/task.sh /actor/task.sh

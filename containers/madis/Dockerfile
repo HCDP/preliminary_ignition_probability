@@ -8,7 +8,7 @@ RUN mkdir -p /home/hawaii_climate_products_container/preliminary/data_aqs/data_o
 RUN mkdir -p /home/hawaii_climate_products_container/preliminary/data_aqs/data_outputs/madis/raw
 
 # Copy the upload configuration.
-ADD /containers/madis/upload_config.json /sync/upload_config.json
+ADD /containers/madis/configs/upload.json /sync/upload.json
 
 # Copy the task definition script.
 ADD /containers/madis/task.sh /actor/task.sh

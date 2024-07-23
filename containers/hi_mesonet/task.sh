@@ -17,8 +17,7 @@ Rscript hiMeso_synoptic_24hr_data_aqs.R $CUSTOM_DATE
 
 echo "[task.sh] [3/4] Injecting authentication variables for uploader."
 cd /sync
-cp upload_config.json config.json
-python3 add_auth_info_to_config.py config.json
+python3 inject_upload_config.py upload.json $CUSTOM_DATE
 
 echo "[task.sh] [4/4] Attempting to upload the gathered data."
 python3 upload.py
