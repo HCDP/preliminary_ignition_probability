@@ -7,7 +7,7 @@ Rscript nws_rr5_hrly_24hr_webscape.R
 
 echo "[task.sh] [3/4] Injecting authentication variables for uploader."
 cd /sync
-python3 inject_upload_config.py upload.json $CUSTOM_DATE
+python3 inject_upload_config.py config.json $CUSTOM_DATE
 
 echo "[task.sh] [4/4] Attempting to upload the gathered data."
 python3 upload.py
