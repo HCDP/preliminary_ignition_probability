@@ -10,6 +10,7 @@ from datetime import timedelta
 from xarray import SerializationWarning
 from itertools import product
 import pytz
+import sys
 
 warnings.filterwarnings('ignore',category=SerializationWarning)
 #DEFINE CONSTANTS-------------------------------------------------------------
