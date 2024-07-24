@@ -126,7 +126,7 @@ else:
 
 time_st = pd.to_datetime(datetime(prev_day.year,prev_day.month,prev_day.day,0))
 time_en = time_st + pd.Timedelta(hours=24)
-hst_times = pd.date_range(time_st,time_en,freq='1H',tz='HST')
+hst_times = pd.date_range(time_st,time_en,freq='1h',tz='HST')
 utc_times = hst_times.tz_convert(tz=None)
 
 prev_day_files = [dt.strftime('%Y%m%d_%H%M')+'.gz' for dt in utc_times]

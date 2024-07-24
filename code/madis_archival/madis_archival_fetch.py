@@ -1,3 +1,4 @@
+import sys
 import os
 import warnings
 import subprocess
@@ -9,8 +10,8 @@ from os.path import exists
 from datetime import datetime, timedelta
 from xarray import SerializationWarning
 from itertools import product
-import pytz
-import sys
+
+# Madis processor for dates more than 122 hours ago
 
 warnings.filterwarnings('ignore',category=SerializationWarning)
 #DEFINE CONSTANTS-------------------------------------------------------------
@@ -143,16 +144,7 @@ ftplink = "madis-data.ncep.noaa.gov"
 ftp_user = "anonymous"
 ftp_pass = "anonymous"
 
-#Get filenames in correct time zone
-hst = pytz.timezone('HST')
-dt = None
-if len(sys.argv) > 1:
-    date_str = sys.argv[1]
-    dt = datetime.strptime(date_str, '%Y-%m-%d').astimezone(hst)
-else:
-    today = datetime.today().astimezone(hst)
-    dt = today - timedelta(days = 1)
-
+dt = datetime.strptime(sys.argv[1], '%Y-%m-%d')
 
 date_str = dt.strftime('%Y-%m-%d')
 year_str = date_str.split('-')[0]
@@ -165,7 +157,7 @@ day_en = day_st + timedelta(hours=24)
 day_st_utc = day_st + timedelta(hours=10)
 day_en_utc = day_en + timedelta(hours=10)
 
-utc_times = pd.date_range(day_st_utc,day_en_utc,freq='1H')
+utc_times = pd.date_range(day_st_utc,day_en_utc,freq='1h')
 all_utc_files = [dt.strftime('%Y%m%d_%H%M')+'.gz' for dt in utc_times]
 unique_dates = pd.Series(utc_times).map(lambda t: t.date()).unique()
 unique_days = ["{:02d}".format(dt.day) for dt in unique_dates]
