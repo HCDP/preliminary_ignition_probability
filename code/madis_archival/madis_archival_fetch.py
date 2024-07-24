@@ -1,4 +1,3 @@
-import syspd
 import os
 import warnings
 import subprocess
