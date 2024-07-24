@@ -110,7 +110,7 @@ def process_madis_data(ds,src):
     convert_K2C(converted_dict,ds,K_CONVERSION_KEYS,src,hii)
     convert_str(converted_dict,ds,STR_CONVERSION_KEYS,hii)
     convert_time(converted_dict,ds,hii)
-    df = pd.DataFrame(columns=DF_COLS)
+    df = pd.DataFrame()
     avail_var_keys = [vk for vk in data_var_keys if vk in list(ds.keys())]
     for vk in avail_var_keys:
         meta_group = [[converted_dict[key][index] for key in META_VAR_KEYS] for index in range(len(hii))]

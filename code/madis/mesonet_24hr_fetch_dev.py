@@ -87,7 +87,7 @@ def process_meso_data(ds,source):
     convert_K2C(converted_dict,ds,K_CONVERSION_KEYS,hii)
     convert_str(converted_dict,ds,STR_CONVERSION_KEYS,hii)
     convert_time(converted_dict,ds,hii)
-    df = pd.DataFrame(columns=DF_COLS)
+    df = pd.DataFrame()
     for vk in list(DATA_VAR_DICT.keys()):
         meta_group = [[converted_dict[key][index] for key in META_VAR_KEYS] for index in range(len(hii))]
         varname = ((vk+' ')*len(hii)).split()
