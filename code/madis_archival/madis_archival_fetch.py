@@ -177,8 +177,6 @@ with ftplib.FTP(ftplink,ftp_user,ftp_pass) as ftp:
             ftp.cwd(ftp_dir)
             ftp_files = ftp.nlst()
             avail_files = [fname for fname in all_utc_files if fname in ftp_files]
-            unavail_files = [fname for fname in all_utc_files if fname not in ftp_files]
-            print("Unavailable files:",unavail_files)
             for fname in avail_files:
                 local_name = src + fname
                 new_local_name = local_name.split('.')[0]
