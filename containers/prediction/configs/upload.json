@@ -1,0 +1,98 @@
+{
+	"global_cache": "cache.pk",
+    "retry": 3,
+    "processes": 1,
+    "print_exec_stats": true,
+    "write_exec_stats": "stats.json",
+    "agave_options": {
+		"api_server": "https://ikeauth.its.hawaii.edu",
+		"username": "username",
+		"password": "password",
+		"api_key": "api_key",
+		"api_secret": "api_secret"
+	},
+	"upload":
+	[
+        {
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_statewide_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/statewide/data_map/%y/%m",
+            "rename": "ignition_probability_day_statewide_data_map_%y_%m_%d_lead01.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_statewide_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/statewide/data_map/%y/%m",
+            "rename": "ignition_probability_day_statewide_data_map_%y_%m_%d_lead02.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_statewide_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/statewide/data_map/%y/%m",
+            "rename": "ignition_probability_day_statewide_data_map_%y_%m_%d_lead03.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_bi_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/bi/data_map/%y/%m",
+            "rename": "ignition_probability_day_bi_data_map_%y_%m_%d_lead01.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_bi_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/bi/data_map/%y/%m",
+            "rename": "ignition_probability_day_bi_data_map_%y_%m_%d_lead02.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_bi_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/bi/data_map/%y/%m",
+            "rename": "ignition_probability_day_bi_data_map_%y_%m_%d_lead03.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_ka_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/ka/data_map/%y/%m",
+            "rename": "ignition_probability_day_ka_data_map_%y_%m_%d_lead01.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_ka_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/ka/data_map/%y/%m",
+            "rename": "ignition_probability_day_ka_data_map_%y_%m_%d_lead02.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_ka_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/ka/data_map/%y/%m",
+            "rename": "ignition_probability_day_ka_data_map_%y_%m_%d_lead03.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_mn_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/mn/data_map/%y/%m",
+            "rename": "ignition_probability_day_mn_data_map_%y_%m_%d_lead01.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_mn_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/mn/data_map/%y/%m",
+            "rename": "ignition_probability_day_mn_data_map_%y_%m_%d_lead02.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_mn_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/mn/data_map/%y/%m",
+            "rename": "ignition_probability_day_mn_data_map_%y_%m_%d_lead03.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_oa_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/oa/data_map/%y/%m",
+            "rename": "ignition_probability_day_oa_data_map_%y_%m_%d_lead01.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_oa_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/oa/data_map/%y/%m",
+            "rename": "ignition_probability_day_oa_data_map_%y_%m_%d_lead02.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/data_outputs/prediction/tiff/Probability_oa_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/oa/data_map/%y/%m",
+            "rename": "ignition_probability_day_oa_data_map_%y_%m_%d_lead03.tif",
+            "system_id": "ikewai-annotated-data"
+        },{
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/code/prediction/dependencies/input_date_list_%Y-%m-%d.png",
+            "remote_path": "HCDP/workflow_data/preliminary/ignition_prob/data_outputs/prediction/logs/",
+            "system_id": "ikewai-annotated-data"
+        }
+
+    ]
+}
