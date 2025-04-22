@@ -89,7 +89,7 @@
             "rename": "ignition_probability_day_oa_data_map_%y_%m_%d_lead03.tif",
             "system_id": "ikewai-annotated-data"
         },{
-            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/code/prediction/dependencies/input_date_list_%Y-%m-%d.png",
+            "local_path": "/home/hawaii_climate_products_container/preliminary/ignition_prob/code/prediction/dependencies/input_date_list_%Y-%m-%d.txt",
             "remote_path": "HCDP/workflow_data/preliminary/ignition_prob/data_outputs/prediction/logs/",
             "system_id": "ikewai-annotated-data"
         }
