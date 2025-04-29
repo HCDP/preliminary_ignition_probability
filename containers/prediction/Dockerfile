@@ -10,6 +10,8 @@ RUN wget -nv https://ikeauth.its.hawaii.edu/files/v2/download/public/system/ikew
 RUN tar -xf prediction_dependencies.tar.gz
 RUN rm prediction_dependencies.tar.gz
 
+RUN mkdir -p /workspace/data_outputs/prediction/tiff/
+
 # Get the container's upload config as specified in the code repo.
 ADD /containers/prediction/configs/upload.json /sync/config.json
 # Add the task wrapper script.
