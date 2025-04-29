@@ -2,6 +2,8 @@ FROM ghcr.io/hcdp/task-preliminary-ignition-probability-base:latest
 LABEL org.opencontainers.image.source="https://github.com/hcdp/preliminary_ignition_probability"
 LABEL org.opencontainers.image.description="Future preliminary ignition probability."
 
+RUN python3 -m pip install tensorflow
+
 ADD /envs/prediction/prod.env /workspace/envs
 ADD /code/prediction /workspace/code/prediction
 
