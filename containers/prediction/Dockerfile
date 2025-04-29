@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.description="Future preliminary ignition probabil
 ADD /envs/prediction/prod.env /workspace/envs
 ADD /code/prediction /workspace/code
 
-WORKDIR /code/prediction/dependencies/models
+WORKDIR /workspace/code/prediction/dependencies/models
 RUN wget -nv https://ikeauth.its.hawaii.edu/files/v2/download/public/system/ikewai-annotated-data/HCDP/workflow_data/preliminary/ignition_prob/dependencies/prediction_dependencies.tar.gz
 RUN tar -xf prediction_dependencies.tar.gz
 RUN rm prediction_dependencies.tar.gz
