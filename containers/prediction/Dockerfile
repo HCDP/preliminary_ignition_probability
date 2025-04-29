@@ -3,7 +3,7 @@ LABEL org.opencontainers.image.source="https://github.com/hcdp/preliminary_ignit
 LABEL org.opencontainers.image.description="Future preliminary ignition probability."
 
 ADD /envs/prediction/prod.env /workspace/envs
-ADD /code/prediction /workspace/code
+ADD /code/prediction /workspace/code/prediction
 
 WORKDIR /workspace/code/prediction/dependencies/models
 RUN wget -nv https://ikeauth.its.hawaii.edu/files/v2/download/public/system/ikewai-annotated-data/HCDP/workflow_data/preliminary/ignition_prob/dependencies/prediction_dependencies.tar.gz
