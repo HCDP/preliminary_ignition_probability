@@ -89,7 +89,7 @@
             "rename": "ignition_probability_day_oa_data_map_%y_%m_%d_lead03.tif",
             "system_id": "ikewai-annotated-data"
         },{
-            "local_path": "/workspace/code/prediction/dependencies/input_date_list_%Y-%m-%d.txt",
+            "local_path": "/workspace/code/prediction/dependencies/input_date_list_%y-%m-%d.txt",
             "remote_path": "HCDP/workflow_data/preliminary/ignition_prob/data_outputs/prediction/logs/",
             "system_id": "ikewai-annotated-data"
         }
