@@ -30,6 +30,7 @@ RUN python3 -m pip install scikit-learn
 RUN python3 -m pip install tiffile
 RUN python3 -m pip install python-dotenv
 RUN python3 -m pip install pathlib
+RUN python3 -m pip install tensorflow
 
 RUN mkdir -p /workspace/code
 RUN mkdir -p /workspace/dependencies
