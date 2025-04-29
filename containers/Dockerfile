@@ -39,4 +39,3 @@ RUN mkdir -p /sync
 RUN wget https://raw.githubusercontent.com/ikewai/data-uploader/main/upload.py -O /sync/upload.py
 
 ADD /tools /sync
-ADD /envs/prod.env /workspace/envs
