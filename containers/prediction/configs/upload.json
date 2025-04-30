@@ -15,78 +15,78 @@
 	[
         {
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_statewide_lead01.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/statewide/data_map/%y/%m",
-            "rename": "ignition_probability_day_statewide_data_map_%y_%m_%d_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead01/statewide/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead01_statewide_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_statewide_lead02.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/statewide/data_map/%y/%m",
-            "rename": "ignition_probability_day_statewide_data_map_%y_%m_%d_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead02/statewide/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead02_statewide_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_statewide_lead03.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/statewide/data_map/%y/%m",
-            "rename": "ignition_probability_day_statewide_data_map_%y_%m_%d_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead03/statewide/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead03_statewide_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_bi_lead01.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/bi/data_map/%y/%m",
-            "rename": "ignition_probability_day_bi_data_map_%y_%m_%d_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead01/bi/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead01_bi_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_bi_lead02.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/bi/data_map/%y/%m",
-            "rename": "ignition_probability_day_bi_data_map_%y_%m_%d_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead02/bi/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead02_bi_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_bi_lead03.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/bi/data_map/%y/%m",
-            "rename": "ignition_probability_day_bi_data_map_%y_%m_%d_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead03/bi/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead03_bi_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_ka_lead01.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/ka/data_map/%y/%m",
-            "rename": "ignition_probability_day_ka_data_map_%y_%m_%d_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead01/ka/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead01_ka_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_ka_lead02.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/ka/data_map/%y/%m",
-            "rename": "ignition_probability_day_ka_data_map_%y_%m_%d_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead02/ka/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead02_ka_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_ka_lead03.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/ka/data_map/%y/%m",
-            "rename": "ignition_probability_day_ka_data_map_%y_%m_%d_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead03/ka/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead03_ka_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_mn_lead01.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/mn/data_map/%y/%m",
-            "rename": "ignition_probability_day_mn_data_map_%y_%m_%d_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead01/mn/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead01_mn_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_mn_lead02.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/mn/data_map/%y/%m",
-            "rename": "ignition_probability_day_mn_data_map_%y_%m_%d_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead02/mn/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead02_mn_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_mn_lead03.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/mn/data_map/%y/%m",
-            "rename": "ignition_probability_day_mn_data_map_%y_%m_%d_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead03/mn/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead03_mn_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_oa_lead01.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/oa/data_map/%y/%m",
-            "rename": "ignition_probability_day_oa_data_map_%y_%m_%d_lead01.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead01/oa/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead01_oa_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_oa_lead02.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/oa/data_map/%y/%m",
-            "rename": "ignition_probability_day_oa_data_map_%y_%m_%d_lead02.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead02/oa/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead02_oa_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/data_outputs/prediction/tiff/Probability_oa_lead03.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/oa/data_map/%y/%m",
-            "rename": "ignition_probability_day_oa_data_map_%y_%m_%d_lead03.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead03/oa/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead03_oa_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         },{
             "local_path": "/workspace/code/prediction/dependencies/input_date_list_%y-%m-%d.txt",

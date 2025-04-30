@@ -15,28 +15,28 @@
 	[
         {
             "local_path": "/workspace/data_outputs/day/tiff/Probability_statewide.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/statewide/data_map/%y/%m",
-            "rename": "ignition_probability_day_statewide_data_map_%y_%m_%d.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead00/statewide/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead00_statewide_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         }, {
             "local_path": "/workspace/data_outputs/day/tiff/Probability_bi.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/bi/data_map/%y/%m",
-            "rename": "ignition_probability_day_bi_data_map_%y_%m_%d.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead00/bi/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead00_bi_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         }, {
             "local_path": "/workspace/data_outputs/day/tiff/Probability_ka.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/ka/data_map/%y/%m",
-            "rename": "ignition_probability_day_ka_data_map_%y_%m_%d.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead00/ka/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead00_ka_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         }, {
             "local_path": "/workspace/data_outputs/day/tiff/Probability_mn.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/mn/data_map/%y/%m",
-            "rename": "ignition_probability_day_mn_data_map_%y_%m_%d.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead00/mn/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead00_mn_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         }, {
             "local_path": "/workspace/data_outputs/day/tiff/Probability_oa.tif",
-            "remote_path": "HCDP/production/ignition_probability/day/oa/data_map/%y/%m",
-            "rename": "ignition_probability_day_oa_data_map_%y_%m_%d.tif",
+            "remote_path": "HCDP/production/ignition_probability/day/lead00/oa/data_map/%y/%m",
+            "rename": "ignition_probability_day_lead00_oa_data_map_%y_%m_%d.tif",
             "system_id": "ikewai-annotated-data"
         }
     ]
