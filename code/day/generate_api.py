@@ -42,6 +42,7 @@ def aggregate_map(date, extent, repeat_times, agg_map, n_agg):
                         #less one map and repeat
                         n_agg -= 1
                         repeat_times -= 1
+        found = True
     except urllib.error.HTTPError as e:
         #file was not found, repeat the next file an additional time
         if e.code != 404:
