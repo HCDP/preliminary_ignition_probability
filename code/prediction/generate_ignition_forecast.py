@@ -35,8 +35,9 @@ def output_tiff(data_arr,county,days_ahead):
         ref_profile.update(compress='lzw')
         ref_profile.update(nodata=NO_DATA_VAL)
         data = ref.read(1)
-        mask = np.isnan(data)
-        data_arr[mask>0] = NO_DATA_VAL
+        mask = ref.read_masks(1)
+        #mask = np.isnan(data)
+        data_arr[mask==0] = NO_DATA_VAL
         with rasterio.open(output_file_name,'w',**ref_profile) as dst:
             dst.write(data_arr,1)
 
@@ -86,15 +87,16 @@ def dynamic_tif_fire_risk_prediction_by_date(county,lead0_date_str,days_ahead):
     for file in selected_files:
         with rasterio.open(file) as src:
             arr = src.read(1)
-            mask = np.isnan(arr)
-            arr = np.nan_to_num(arr, nan=0)
+            mask = src.read_masks(1)
+            #mask = np.isnan(arr)
+            #arr = np.nan_to_num(arr, nan=0)
+            arr[mask==0] = 0
             arr = np.expand_dims(arr, axis=-1)
-            #mask = np.expand_dims(mask, axis=-1) #why the hell do you waste a line doing this if mask gets overwritten later
             sequence.append(arr)
     seq_arrays = np.array(sequence)
     print("seq_arrays",seq_arrays.shape) #diagnostic
 
-    predicted_images = multi_step_forecast(model, seq_arrays, days_ahead=days_ahead) #the actual thing we want is in here
+    predicted_images = multi_step_forecast(model, seq_arrays, days_ahead=days_ahead)
     return predicted_images
 
 if __name__=="__main__":
