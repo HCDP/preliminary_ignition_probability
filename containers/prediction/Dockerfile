@@ -10,6 +10,8 @@ RUN wget -nv https://ikeauth.its.hawaii.edu/files/v2/download/public/system/ikew
 RUN tar -xf prediction_dependencies.tar.gz
 RUN rm prediction_dependencies.tar.gz
 
+RUN pip install -U prefect
+
 RUN mkdir -p /workspace/data_outputs/prediction/tiff/
 
 # Get the container's upload config as specified in the code repo.
@@ -19,4 +21,4 @@ ADD /containers/prediction/task.sh /workspace/task.sh
 
 WORKDIR /workspace
 # This container is intended to run the task wrapper at launch, unless otherwise specified at run-time.
-CMD [ "/bin/bash", "task.sh" ]
+CMD [ "python3", "task.py" ]
