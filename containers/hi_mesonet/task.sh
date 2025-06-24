@@ -10,10 +10,10 @@ else
 fi
 echo "Acquisition date is: " $CUSTOM_DATE
 
-echo "[task.sh] [2/4] Collecting Climate data from Synoptic on the daily timeframe."
+echo "[task.sh] [2/4] Collecting Climate data from HI Mesonet database on the daily timeframe."
 cd /home/hawaii_climate_products_container/preliminary/data_aqs/code/hi_mesonet
-echo "---hiMeso_synoptic_24hr_data_aqs.R---"
-Rscript hiMeso_synoptic_24hr_data_aqs.R $CUSTOM_DATE
+echo "---mesonet_aggregator.py---"
+python3 mesonet_aggregator.py $CUSTOM_DATE
 
 echo "[task.sh] [3/4] Injecting authentication variables for uploader."
 cd /sync
