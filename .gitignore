@@ -1,0 +1,10 @@
+**/__pycache__
+**/*.out
+**/*.err
+*.csv
+*.dat
+*.txt
+*.tif
+*.gz
+*.zip
+*.DS_store
