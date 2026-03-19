@@ -1,9 +1,11 @@
 #!/bin/bash
 
+set -euo pipefail
+
 echo "[task.sh] [1/5] Starting Execution."
 export TZ="HST"
 echo "It is currently $(date)."
-if [ $CUSTOM_DATE ]; then
+if [[ -v CUSTOM_DATE ]]; then
     echo "An aggregation date was provided by the environment."
 else
     export CUSTOM_DATE=$(date -d "1 day ago" --iso-8601)
